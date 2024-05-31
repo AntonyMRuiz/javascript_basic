@@ -9,12 +9,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="Logo" width="40" height="40"
                     class="d-inline-block align-text-center rounded-circle">
@@ -25,11 +27,19 @@
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -44,41 +54,74 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="images/shopping_card_icon.png" alt="Logo" width="40" height="40"
-                                class="d-inline-block align-text-center">
-                        </a>
-                        <ul class="dropdown-menu" style="width:400px;">
-                            <li>
-                                <a class="dropdown-item w-100" href="#">
 
-                                    <div class="card mb-3">
-                                        <div class="row g-0">
-                                            <div class="col-md-4">
-                                                <img src="https://contents.mediadecathlon.com/p2174865/k$5361652f4a8eafda8318e1b764247e5e/aletas-natacion-largas-nabaiji-trainfin.jpg?format=auto&quality=70&f=800x0" class="img-fluid rounded-start" alt="...">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-wrap">Name product</h5>
-                                                    <p class="card-text text-wrap">cantidad: X</p>
-                                                    <p class="card-text text-wrap">Total</p>
+                        <div class="btn-group dropstart">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="images/shopping_card_icon.png" alt="Logo" width="40" height="40"
+                                    class="d-inline-block align-text-center">
+                            </button>
+                            <ul class="dropdown-menu shopping">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+
+                                        <div class="card" >
+                                            <div class="row g-0">
+                                                <div class="col-md-6">
+                                                    <img src="https://contents.mediadecathlon.com/p2174865/k$5361652f4a8eafda8318e1b764247e5e/aletas-natacion-largas-nabaiji-trainfin.jpg?format=auto&quality=70&f=800x0"
+                                                        class="img-fluid rounded-start" alt="...">
                                                 </div>
-                                                
-                                                <div class="card-footer">
-                                                    <button type="button" class="btn btn-danger">Delete</button>
+                                                <div class="col-md-6">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-wrap">Name product</h5>
+                                                        <p class="card-text text-wrap">cantidad: X</p>
+                                                        <p class="card-text text-wrap">Total</p>
+                                                    </div>
+
+                                                    <div class="card-footer">
+                                                        <button type="button" class="btn btn-danger">Delete</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="container">
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 
     <div class="container">
 

@@ -1,0 +1,23 @@
+:root {
+    --bs-btn-active-border-color : rgba(21, 21, 93, 0.716);
+    --bs-btn-active-bg: rgba(59, 59, 204, 0.516);
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-toggle::before {
+    display: none !important; 
+}
+
+.card {
+    width: 400px;
+}
+
+.shopping {
+    max-height: 90vh;
+    overflow-y: scroll;
+    scrollbar-color: none;
+}
